@@ -1,17 +1,32 @@
-<!-- 기존 <header> 안의 upload-section과 loading-container를 삭제하거나 주석 처리하세요 -->
-<header class="glass-panel text-center">
-    <h1 class="gradient-text">나의 E-Book 사이트</h1>
-    <p class="subtitle">작품을 감상해 보세요.</p>
-</header>
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Smart Work Portfolio</title>
+    <link rel="stylesheet" href="style.css"> <!-- style.css 연결 -->
+</head>
+<body>
 
-<!-- 메인 영역을 처음부터 보이게 수정 (style="display: block;") -->
-<main id="book-area" style="display: block;">
-    <div class="book-controls glass-panel">
-        <button id="prev-btn" class="control-btn">이전</button>
-        <span id="page-info">로딩 중...</span>
-        <button id="next-btn" class="control-btn">다음</button>
+    <h1>AI Smart Work Portfolio</h1>
+    <p>아이콘을 클릭하면 상세 문서를 확인할 수 있습니다.</p>
+
+    <div class="file-container">
+        <!-- 첫 번째 파일: 정량펌프 유지관리지침서 -->
+        <div class="file-item">
+            <a href="정량펌프 유지관리지침서.pdf" target="_blank" title="지침서 보기">
+                📂 <span>유지관리지침서</span>
+            </a>
+        </div>
+
+        <!-- 두 번째 파일: 지명원 -->
+        <div class="file-item">
+            <a href="지명원 (1).pdf" target="_blank" title="지명원 보기">
+                📄 <span>지명원</span>
+            </a>
+        </div>
     </div>
-    <div class="book-wrapper">
-        <div id="book"></div>
-    </div>
-</main>
+
+    <script src="script.js"></script> <!-- script.js 연결 -->
+</body>
+</html>
