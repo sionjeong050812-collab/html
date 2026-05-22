@@ -130,4 +130,59 @@
     </footer>
 
 </body>
+<div class="side-campaign-bar">
+    <a href="pdf/water.pdf.pdf" target="_blank" class="side-icon campaign-icon">
+        <span class="icon-text">캠페인<br>카드뉴스</span>
+    </a>
+    <a href="pdf/Brochure.pdf.pdf" target="_blank" class="side-icon brochure-icon">
+        <span class="icon-text">기업<br>브로슈어</span>
+    </a>
+</div>
+
+<style>
+/* 사이드바 전체 위치 설정 */
+.side-campaign-bar {
+    position: fixed;
+    right: 25px; /* 오른쪽에서 25px 띄움 */
+    top: 50%; /* 화면 중앙 높이 */
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* 아이콘 사이 간격 */
+    z-index: 9999; /* 다른 요소보다 위에 표시 */
+}
+
+/* 아이콘 기본 스타일 */
+.side-icon {
+    width: 80px;
+    height: 80px;
+    color: white;
+    text-decoration: none;
+    border-radius: 50%; /* 동그란 모양 */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    font-weight: bold;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    transition: all 0.3s ease;
+    text-align: center;
+}
+
+/* 마우스 올렸을 때 효과 */
+.side-icon:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.4);
+}
+
+/* 캠페인 아이콘 색상 (물 느낌의 하늘색) */
+.campaign-icon {
+    background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+}
+
+/* 브로슈어 아이콘 색상 (비에이텍 브랜드 네이비/블루) */
+.brochure-icon {
+    background: linear-gradient(135deg, #0052D4 0%, #4364F7 50%, #6FB1FC 100%);
+}
+</style>
 </html>
