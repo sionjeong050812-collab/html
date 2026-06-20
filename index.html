@@ -250,11 +250,11 @@
         };
 
         // 2. 카드뉴스 버튼 클릭 (img1.jpg ~ img4.png 연동 고려하여 순수 파일명 매칭 보정)
-        document.getElementById('openNews').onclick = () => {
-            // 사용자의 요청 내용 기반 (img1, img2, img3는 jpg / img4는 png인 기존 소스 기반 자동 확장자 매칭)
-            const newsFiles = ['img1.png', 'img2.png', 'img3.png', 'img4.png'];
-            setupSlideshowCustom(newsFiles);
-        };
+       // 2. 카드뉴스 버튼 클릭 (★ 깃허브 image/ 폴더 경로를 반영하여 수정)
+document.getElementById('openNews').onclick = () => {
+    const newsFiles = ['image/img1.png', 'image/img2.png', 'image/img3.png', 'image/img4.png'];
+    setupSlideshowCustom(newsFiles);
+};
 
         function setupSlideshow(prefix, count, ext) {
             container.innerHTML = '';
