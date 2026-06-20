@@ -244,15 +244,14 @@
         let currentIdx = 0;
         let activeImages = [];
 
-        // 1. 캠페인 버튼 클릭 (cam1.png ~ cam8.png)
-        document.getElementById('openCampaign').onclick = () => {
-            setupSlideshow('image/cam', 8, 'png');
-        };
+        // 1. 캠페인 버튼 클릭 (앞에 pdf/ 경로 추가)
+document.getElementById('openCampaign').onclick = () => {
+    setupSlideshow('pdf/image/cam', 8, 'png');
+};
 
-        // 2. 카드뉴스 버튼 클릭 (img1.jpg ~ img4.png 연동 고려하여 순수 파일명 매칭 보정)
-       // 2. 카드뉴스 버튼 클릭 (★ 깃허브 image/ 폴더 경로를 반영하여 수정)
+// 2. 카드뉴스 버튼 클릭 (각 파일명 앞에 pdf/ 경로 추가)
 document.getElementById('openNews').onclick = () => {
-    const newsFiles = ['image/img1.png', 'image/img2.png', 'image/img3.png', 'image/img4.png'];
+    const newsFiles = ['pdf/image/img1.png', 'pdf/image/img2.png', 'pdf/image/img3.png', 'pdf/image/img4.png'];
     setupSlideshowCustom(newsFiles);
 };
 
